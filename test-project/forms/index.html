@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <main>
+        <!--Inputs text, date y time-->
+        <p>&#128064</p>
+        <p>inputs: text, date y time:</p>
+        <form action="">
+            <label for="nombre">
+                <span>¿Cual es tu nombre? </span>
+                <input type="text" id="nombre" placeholder="Tu nombre">
+            </label>        
+            <label for="inicio-empresa">
+                <span>¿Cual es el dia en que inició a trabajar en la empresa? </span>
+                <input type="date" id="inicio-empresa">
+            </label> 
+            <label for="horario">
+                <span>¿Cual es tu horario de trabajo? </span>
+                <input type="time" id="horario">
+            </label> 
+            <input type="submit" name="" id=""> 
+        </form>
+
+        <!--Inputs time, date, week, month-->
+        <p>&#128064</p>
+        <p>Pedir un horario, forma larga: </p>
+        <form action="">
+            <label for="hora">
+                <span>Hora</span>
+                <input type="time" name="hora" id="hora">
+            </label>
+            <label for="dia">
+                <span>Día</span>
+                <input type="date" name="dia" id="dia">
+            </label>
+            <label for="semana">
+                <span>Semana</span>
+                <input type="week" name="semana" id="semana">
+            </label>
+            <label for="mes">
+                <span>Mes</span>
+                <input type="month" name="mes" id="mes">
+            </label>
+            <input type="submit" name="" id="">        
+        </form>
+
+        <!--Inputs datetime-local-->
+        <p>&#128064</p>
+        <p>Pedir un horario, forma corta:</p>
+        <form action="">
+            <label for="calendario">
+                <span></span>
+                <input type="datetime-local" id="calendario" name="calendario">                
+            </label>
+            <input type="submit" name="" id="">
+        </form>
+
+        <!--Probando autocompletado y campos obligatorios-->
+        <!--Inputs text, email-->
+        <p>&#128064</p>
+        <p>Datos de usuario, autocompletado y campos obligatorios:</p>
+        <form action="">
+            <label for="nombre">
+                <span>Digita tu nombre:</span>
+                <input type="text" name="nombre" id="nombre" autocomplete="name" required>
+            </label>
+            <label for="correo">
+                <span>Digita tu correo:</span>
+                <input type="email" name="correo" id="correo" autocomplete="email" required>
+            </label>
+            <label for="pais">
+                <span>Diguta tu pais de residencia</span>
+                <input type="text" name="pais" id="pais" autocomplete="country" required>
+            </label>
+            <label for="cp">
+                <span>Digita tu codigo postal</span>
+                <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
+            </label>
+            <input type="submit" name="" id="">
+        </form>
+
+        <!--Otros inputs-->
+        <p>&#128064</p>
+        <p>Otros tipos de inputs:</p>
+        <form action="">
+            <ol>
+                <li>
+                    <label for="boton">
+                        <span>Presiona el boton:</span>
+                        <input type="button" value="click me">
+                    </label>
+                </li>
+                <li>
+                    <label for="checkbox">
+                        <span>checkbox:</span>
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                    </label>
+                </li>
+                <li>
+                    <label for="color">
+                        <span>color:</span>
+                        <input type="color" name="color" id="color">
+                    </label>
+                </li>
+                <li>
+                    <label for="file">
+                        <span>Cargar un archivo:</span><br>
+                        <input type="file" name="file" id="file">
+                    </label>
+                </li>
+                <li>
+                    <label for="image">
+                        <span>imagen:</span><br>
+                        <input type="image" src="https://www.motorpotencia.com/wp-content/uploads/2020/06/Nissan-GTR-R34-01.jpg" alt="Submit" width="100" height="100">
+                    </label>
+                </li>
+                <li>
+                    <label for="hidden">
+                        <span>hidden (oculto):</span>
+                        <input type="hidden" name="hidden" id="hidden">
+                    </label>
+                </li>
+                <li>
+                    <label for="number">
+                        <span>numero:</span><br>
+                        <input type="number" name="number" id="number">
+                    </label>
+                </li>
+                <li>
+                    <label for="password">
+                        <span>contraseña:</span><br>
+                        <input type="password" name="password" id="password">
+                    </label>
+                </li>
+                <li>
+                    <span>carros:</span><br>
+                    <input type="radio" id="region1" name="region" value="japoneses">
+                    <label for="region1">Japoneses</label><br>
+                    <input type="radio" id="region2" name="region" value="europeos">
+                    <label for="region2">Europeos</label><br>
+                    <input type="radio" id="region3" name="region" value="americanos">
+                    <label for="region3">Americanos</label><br>  
+                </li>
+                <li>
+                    <label for="rango">
+                        <span>Rango:</span><br>
+                        <input type="range" name="rango" id="rango" min="0" max="15">
+                    </label>
+                </li>
+                <li>
+                    <label for="reset">
+                        <span>Borrar datos del formulario:</span><br>
+                        <input type="reset" name="reset" id="reset">
+                    </label>
+                </li>
+                <li>
+                    <label for="buscar">
+                        <span>Buscar:</span><br>
+                        <input type="search" name="buscar" id="buscar">
+                    </label>
+                </li>
+                <li>
+                    <label for="tel">
+                        <span>Telefono:</span><br>
+                        <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </label>
+                </li>
+                <li>
+                    <label for="url">
+                        <span>URL:</span><br>
+                        <input type="url" name="url" id="url">
+                    </label>
+                </li>
+
+            </ol>
+            <input type="submit" name="" id="">
+        </form>
+
+        <!--Select :-->
+        <p>&#128064</p>
+        <p>Select:</p>
+
+        <!--Select (no la mejor practica de esta forma):-->
+        <span>(mala manera)Seleccione una marca:</span><br>
+        <select name="marcas" id="">            
+            <option value="Subaru">Subaru</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+            <option value="Nissan">Nissan</option>
+        </select>
+
+        <!--Select (Mejor practica):-->
+        <br><br>
+        <span>(buena manera)Seleccione una marca:</span><br>
+        <input list="marcas2">
+        <datalist id="marcas2">
+            <option value="Subaru">Subaru</option>
+            <option value="Mazda">Mazda</option>
+            <option value="Mitsubishi">Mitsubishi</option>
+            <option value="Nissan">Nissan</option>
+        </datalist>
+
+    </main>
+
+    <footer>
+        <br><br><br>
+        <h5>Pie de pagina</h5>
+        <p>Soy el pie de pagina :)</p>
+        <p>hecho por:</p>
+        <p>Yo</p>
+    </footer>
+
+</body>
+</html>

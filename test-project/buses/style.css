@@ -1,0 +1,8 @@
+html{
+    font-size: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3 {
+    /*Elegir font-size del padre o del elemento superior que lo tenga definido*/
+    font-size: inherit;
+}

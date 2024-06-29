@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Titulo de la pagina</title>
+		<link rel="stylesheet" href="estilos.css" />
+        	<meta charset="utf­8" />        	
+	</head>
+	<body>
+		<h1 id = "titulo">Pagina oficial del dotor Uribe</h1>
+		<figure class = "imagen"><img id = "fotoUribe" src="uribeNormal.jpg" alt="Bienvenidos a mi sitio web hijitos" 
+			onmouseout="desMaquillar();" onmouseover="maquillar();"/>
+		</figure>
+
+		<script>
+			function maquillar()
+			{
+				document.getElementById('fotoUribe').src = "uribeMaquillado.jpg";	
+			}
+			function desMaquillar()
+			{
+				document.getElementById('fotoUribe').src = "uribeNormal.jpg";				
+			}
+		</script>
+	</body>
+</html>

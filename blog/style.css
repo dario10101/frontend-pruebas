@@ -1,0 +1,137 @@
+/*Quitar margenes por defecto que pueda poner el navegador*/
+* {
+    box-sizing: border-box; /*Suma los datos de padding y margin al calcular dimensiones*/
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    background: #f0f0f0;
+
+    /* Reacomoda los elementos dependiendo del tamaño de la pantalla */
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+    /* Le digo al body: ocupe todo el alto de la pantalla */
+    min-height: 100vh;
+    align-items: flex-start;
+    /* justify-content: space-between;   */
+}
+
+header {
+    background: black;
+    width: 100%;
+
+    /* https://www.w3schools.com/css/css_border.asp */
+    border: 10px dotted rgb(0, 255, 0);
+    padding: 10px;
+
+    /* align-self: flex-start; */
+}
+
+main {
+    background-color: #032110;
+    width: 70%;
+    border: 10px solid red;
+    padding: 20px 30px;
+
+    text-align: left;
+    align-self: flex-start;
+}
+
+footer {
+    background-color: #033140;
+    width: 100%;
+    border: 10px solid yellow;   
+    padding: 1em;
+
+    align-self: flex-end;
+    text-align: center;
+    
+    /* padding: 20px 30px; */
+}
+
+h1 {
+    color: blue;
+}
+
+.profile-figure {
+    color: green;
+}
+
+.profile-figure__item {
+    height: 100px;
+    width: 100px;
+}   
+
+.profile-figure__item:hover {
+    height: 150px;
+    width: 150px;
+} 
+
+.main-nav {
+    margin-top: px;
+    background-color: #154360; 
+    text-align: right;  
+
+    /*none elimina las viñetas de puntos*/
+    /* list-style: none;  */
+
+    /*Cambiar margenes internos dados por defecto*/
+    /* padding-left: 10; */
+}
+
+.main-nav__item {    
+    display: inline-block; 
+}
+
+.main-nav__item a {
+    color: white;
+    padding: 30px;
+    border-radius: 2px;    
+    background-color: #186A3B;
+    font-size: larger;
+    font-style: oblique;
+    font-weight: bolder;
+
+    /* none quita las lineas debajo de la palabra por defecto */
+    text-decoration: wavy underline line-through overline red; 
+}
+
+/* Como manejar combinadores +, ~, >, [vacio, el mas comun y generico]*/
+/*  */
+/* todos los p Hijos de .div-general */
+.div-general p{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2px;
+    
+}
+/* Los h2 hijos directos de .div-general__article */
+.div-general__article > h2{
+    color: brown;
+}
+/* Todos los p hermanos de h2, pero solo los p justo despues de h2 */
+h2 + p{
+    font-size: 30px;
+}
+/*Todos los p hermanos de h2*/
+h2 ~ p{
+    text-align: left;
+}
+
+
+
+
+.main-nav__item a:hover {
+    color: yellow;
+    background-color:#154360;
+}
+.main-nav__item a:active {
+    color: red;
+    background-color: aqua;
+}
+.main-nav__item a::after {
+    content: " | :D |";
+}

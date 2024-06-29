@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title id = "titulo">Titulo de la pagina</title>
+		<link rel="stylesheet" href="estilos.css" />
+        <meta charset="utf­8" />    
+        <audio id = "sonido" src="sound.mp3"></audio>      	      	
+	</head>
+	<body>		
+
+		<h1 id = "titulo">Pagina NO oficial del Paraco xD</h1>
+		<figure class = "imagen"><img id = "fotoUribe" src="uribeNormal.jpg" alt="Bienvenidos a mi sitio web hijitos" 
+			onmouseover="actuar();" onmouseout="volver();" />
+		</figure>	
+	</body>
+</html>
+
+
+<script>			
+	var snd = document.getElementById('sonido'); 
+	snd.play()			
+	function actuar()			
+	{ 
+		if(snd.paused)
+		{
+			snd.play();
+			document.getElementById('fotoUribe').src = "imagenSorpresa.jpg"; 
+		}		
+	}
+	function volver()
+	{
+		document.getElementById('fotoUribe').src = "uribeNormal.jpg";
+		snd.pause();
+	}
+</script>

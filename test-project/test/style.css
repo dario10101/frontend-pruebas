@@ -1,0 +1,81 @@
+/* Buenas practicas para todos los proyectos */
+* { /* Para no tener problemas con tamaños de contenedores */
+    box-sizing: border-box; /*Suma los datos de padding y margin al calcular dimensiones*/
+    margin: 0;
+    padding: 0;
+}
+html {
+    /*
+    Como por defecto el font-size es 16px, el 62,5% nos daría 10px
+    Para usar la medida de rem, como pixeles
+    ej. 1.6rem es igual a 16 px
+    */
+    font-size: 62.5%; 
+}
+
+
+
+
+
+/* Para Manejo de unidad de medida em */
+/* .main-container {
+    font-size: 1.5em;
+}
+.main-container .container1 {
+    font-size: 1.5em;
+}
+.main-container .container1 .container2 {
+    font-size: 1.5em;
+} */
+
+
+
+
+/* Para Manejo de unidad de medida em */
+/* .main-container {
+    font-size: 3rem;
+}
+.main-container .container1 {
+    font-size: 1.6rem;
+}
+.main-container .container1 .container2 {
+    font-size: 1.6rem;
+} */
+
+
+
+
+/* Max/Min width */
+body{
+    background-color: red;
+    width: 90vw;
+    height: 0vh;
+
+    display: flex;
+    align-items: center;
+}
+main {
+    background-color: green;
+    width: 90vw;
+    height: 90vh;
+    margin: auto;
+    
+    display: flex;
+    align-items: center;
+}
+
+section {
+    background-color: yellow;
+    width: 50%;
+    /* height: 50%; */
+
+    min-width: 200px;
+    max-width: 500px;
+
+    min-height: 200px;
+    /* max-height: 500px; */
+    margin: auto;
+}
+p {
+    font-size: 2rem;
+}
